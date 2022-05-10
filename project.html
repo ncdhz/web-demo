@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+</head>
+<body>
+
+<div class="navigation">
+    <div class="icon"><img src="img/logo.jpg"/></div>
+    <div class="right">
+        <div class="button"><a href="index.html">HOME</a></div>
+        <div class="button"><a href="project.html">PROJECT</a></div>
+    </div>
+</div>
+
+<div class="title">
+    <div>ALL GROUP PROJECTS LISTED BELOW</div>
+</div>
+<div class="body">
+    <div class="table">
+        <div class="name" onclick="showContext(this)"><div class='iconfont icon-jia'></div><div class="name_text">Team 1 - Biko Digital Development Team</div>
+        <div class="null"></div>
+        </div>
+        <div class="context">
+            <div class="project_logo"><img src="img/project_logo.png"/></div>
+            <div class="project_title">Project Name</div>
+            <div class="project_name">
+                Website Design and Development for an IT Consultancy Company
+            </div>
+            <div class="project_title">Project Summary</div>
+            <div class="project_summary">
+                In 2019, New South Wales witnessed one of the worst bushfires in the past decade affecting over 5.5 million hectares (7%) of land. Out of which, 37% of the national park estate (i.e., all categories of parks), 42% of state forests, and 4% of freehold land were within the fire ground. Naturally, the bushfires altered large areas of habitat for species and ecosystems in the State, including private and public lands. One of the many negative impacts of the bushfires was the growth of invasive species such as harmful weeds in these regions. Rural landholders are struggling to manage weed invasions in the aftermath of the Black Summer fires. The subsequent wet winters have accelerated weed incursions, meaning many landholders are discovering new weeds thriving on their properties. Yet limited financial or technical support is available to support landholders to manage weeds. Our website, Weedconversations.org aims to establish a virtual weed management hub, where landholders can readily access information about new weeds, identify which weeds to prioritize for management, and learn about management techniques that other landholders in their region have successfully used in fire-affected and other landscapes. In doing so, this hub will bring communities together to overcome current weed challenges.
+            </div>
+        </div>
+    </div>
+    <div class="table">
+        <div class="name" onclick="showContext(this)"><div class='iconfont icon-jia'></div><div class="name_text">Team 1 - Biko Digital Development Team</div>
+        <div class="null"></div>
+        </div>
+        <div class="context">
+            <div class="project_logo"><img src="img/project_logo.png"/></div>
+            <div class="project_title">Project Name</div>
+            <div class="project_name">
+                Website Design and Development for an IT Consultancy Company
+            </div>
+            <div class="project_title">Project Summary</div>
+            <div class="project_summary">
+                In 2019, New South Wales witnessed one of the worst bushfires in the past decade affecting over 5.5 million hectares (7%) of land. Out of which, 37% of the national park estate (i.e., all categories of parks), 42% of state forests, and 4% of freehold land were within the fire ground. Naturally, the bushfires altered large areas of habitat for species and ecosystems in the State, including private and public lands. One of the many negative impacts of the bushfires was the growth of invasive species such as harmful weeds in these regions. Rural landholders are struggling to manage weed invasions in the aftermath of the Black Summer fires. The subsequent wet winters have accelerated weed incursions, meaning many landholders are discovering new weeds thriving on their properties. Yet limited financial or technical support is available to support landholders to manage weeds. Our website, Weedconversations.org aims to establish a virtual weed management hub, where landholders can readily access information about new weeds, identify which weeds to prioritize for management, and learn about management techniques that other landholders in their region have successfully used in fire-affected and other landscapes. In doing so, this hub will bring communities together to overcome current weed challenges.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer"></div>
+<script>
+    function showContext(node) {
+        var context = node.nextElementSibling
+        var iconfont = node.getElementsByClassName('iconfont')
+        if (context.getAttribute("class") === 'context') {
+            context.setAttribute("class", "context_1")
+            node.setAttribute("class", "name_1")
+            iconfont[0].setAttribute("class", "iconfont icon-jian")
+        } else {
+            context.setAttribute("class", "context")
+            node.setAttribute("class", "name")
+            iconfont[0].setAttribute("class", "iconfont icon-jia")
+        }
+    }
+</script>
+</body>
+</html>

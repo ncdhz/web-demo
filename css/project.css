@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "iconfont"; /* Project id  */
+    src: url('../iconfont/iconfont.ttf?t=1652190027465') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 20px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 30px;
+    float: left;
+}
+
+.icon-jian:before {
+    content: "\f0153";
+}
+
+.icon-jia:before {
+    content: "\f0154";
+}
+
+.body {
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+}
+.body .table {
+    font-weight: 300;
+}
+.body .table .name, .body .table .name_1{
+    font-size: 18px;
+    padding: 10px 15px;
+    align-items: center;
+    display: flex;
+}
+.body .table .name_text{
+    width: calc(100% - 30px);
+    float: left;
+}
+.body .table .null {
+    clear: both;
+}
+.body .table .name_1 {
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+.body .table .context {
+    display: none;
+}
+.body .table .context_1{
+    display: block;
+    background-color: white;
+    padding: 10px 15px;
+}
+.body .table .project_logo {
+    text-align: center;
+}
+@media (max-width: 769px) {
+    .body .table .project_logo img {
+        max-width: 300px;
+    }
+}
+@media (min-width: 769px) {
+    .body .table .project_logo img {
+        max-width: 500px;
+    }
+}
+.body .table .project_title {
+    font-size: 25px;
+    margin: 5px 0px;
+}
+.body .table .project_name, .body .table .project_summary {
+    font-size: 14px;
+}  
